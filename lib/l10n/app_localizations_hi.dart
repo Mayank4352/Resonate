@@ -393,6 +393,19 @@ class AppLocalizationsHi extends AppLocalizations {
   String get cancel => 'कैंसल';
 
   @override
+  String get hide => 'छुपाएं';
+
+  @override
+  String get removeRoom => 'रूम छुपाएं';
+
+  @override
+  String get removeRoomFromList => 'सूची से छुपाएं';
+
+  @override
+  String get removeRoomConfirmation =>
+      'क्या आप वाकई इस आने वाले रूम को अपनी सूची से छुपाना चाहते हैं?';
+
+  @override
   String get completeYourProfile => 'अपनी प्रोफ़ाइल पूरी करो';
 
   @override
@@ -544,6 +557,9 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get errorLoadPackageInfo => 'पैकेज जानकारी लोड नहीं हो सकी';
+
+  @override
+  String get searchFailed => 'रूम खोजने में विफल। कृपया पुनः प्रयास करें।';
 
   @override
   String get updateAvailable => 'अपडेट उपलब्ध है';
@@ -716,6 +732,32 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get noSearchResults => 'कोई रिज़ल्ट नहीं मिला';
+
+  @override
+  String get searchRooms => 'रूम खोजें...';
+
+  @override
+  String get searchingRooms => 'रूम खोजे जा रहे हैं...';
+
+  @override
+  String get clearSearch => 'खोज साफ़ करें';
+
+  @override
+  String get searchError => 'खोज त्रुटि';
+
+  @override
+  String get searchRoomsError =>
+      'कमरों की खोज असफल हुई। कृपया दोबारा कोशिश करें।';
+
+  @override
+  String get searchUpcomingRoomsError =>
+      'आगामी कमरों की खोज असफल हुई। कृपया दोबारा कोशिश करें।';
+
+  @override
+  String get search => 'खोजें';
+
+  @override
+  String get clear => 'साफ़ करें';
 
   @override
   String shareRoomMessage(
@@ -953,6 +995,9 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get speakerLabel => 'स्पीकर';
+
+  @override
+  String get audioOptions => 'ऑडियो विकल्प';
 
   @override
   String get end => 'समाप्त करें';
@@ -1223,6 +1268,13 @@ class AppLocalizationsHi extends AppLocalizations {
       'नवीनतम सुविधाएं और सुधार प्राप्त करें!';
 
   @override
+  String get failedToRemoveRoom => 'रूम हटाने में विफल';
+
+  @override
+  String get roomRemovedSuccessfully =>
+      'रूम आपकी सूची से सफलतापूर्वक हटा दिया गया';
+
+  @override
   String get alert => 'अलर्ट';
 
   @override
@@ -1297,4 +1349,65 @@ class AppLocalizationsHi extends AppLocalizations {
   @override
   String get noRecordingError =>
       'आपके पास कोई रिकॉर्डिंग नहीं है। लाइव चैप्टर रूम से बाहर निकलने के लिए, कृपया पहले रिकॉर्डिंग शुरू करें।';
+
+  @override
+  String get audioOutput => 'ऑडियो आउटपुट';
+
+  @override
+  String get selectPreferredSpeaker => 'अपना पसंदीदा स्पीकर चुनें';
+
+  @override
+  String get noAudioOutputDevices => 'कोई ऑडियो आउटपुट डिवाइस नहीं मिला';
+
+  @override
+  String get refresh => 'रीफ़्रेश करें';
+
+  @override
+  String get done => 'हो गया';
+
+  @override
+  String get deleteMessageTitle => 'संदेश हटाएँ';
+
+  @override
+  String get deleteMessageContent =>
+      'क्या आप वाकई इस संदेश को हटाना चाहते हैं?';
+
+  @override
+  String get thisMessageWasDeleted => 'यह संदेश हटा दिया गया है';
+
+  @override
+  String get failedToDeleteMessage => 'संदेश हटाने में विफल रहा';
+
+  @override
+  String get noFriendsYet => 'अभी तक कोई दोस्त नहीं';
+
+  @override
+  String get noFriendsDescription =>
+      'आपकी दोस्तों की सूची खाली है। लोगों से जुड़ना शुरू करें और अपना नेटवर्क बढ़ाएं!';
+
+  @override
+  String get findFriends => 'दोस्त खोजें';
+
+  @override
+  String get inviteFriend => 'दोस्त को आमंत्रित करें';
+
+  @override
+  String get noFriendRequestsYet => 'कोई फ्रेंड रिक्वेस्ट नहीं';
+
+  @override
+  String get noFriendRequestsDescription =>
+      'आपके पास कोई पेंडिंग फ्रेंड रिक्वेस्ट नहीं है। जुड़ने के लिए अपने दोस्तों को आमंत्रित करें!';
+
+  @override
+  String inviteToResonate(String url) {
+    return 'अरे! Resonate पर मेरे साथ जुड़ो - एक सोशल ऑडियो प्लेटफॉर्म जहां हर आवाज़ की कद्र होती है। अभी डाउनलोड करें: $url';
+  }
+
+  @override
+  String get usernameInvalidFormat =>
+      'Please enter a valid username. Only letters, numbers, dots, underscores, and hyphens are allowed.';
+
+  @override
+  String get usernameAlreadyTaken =>
+      'This username is already taken. Try a different one.';
 }

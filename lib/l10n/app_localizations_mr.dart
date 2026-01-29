@@ -318,6 +318,59 @@ class AppLocalizationsMr extends AppLocalizations {
   String get contribute => 'योगदान द्या';
 
   @override
+  String get appPreferences => 'अॅप प्राधान्ये';
+
+  @override
+  String get transcriptionModel => 'प्रतिलेखन मॉडेल';
+
+  @override
+  String get transcriptionModelDescription =>
+      'व्हॉयस प्रतिलेखनसाठी एआई मॉडेल निवडा. मोठे मॉडेल अधिक अचूक आहेत परंतु हळू आणि अधिक स्टोरेज आवश्यक आहे.';
+
+  @override
+  String get whisperModelTiny => 'सूक्ष्म';
+
+  @override
+  String get whisperModelTinyDescription =>
+      'सर्वात वेगवान, कमीत कमी अचूक (~३९ एमबी)';
+
+  @override
+  String get whisperModelBase => 'बेस';
+
+  @override
+  String get whisperModelBaseDescription => 'संतुलित गती आणि अचूकता (~७४ एमबी)';
+
+  @override
+  String get whisperModelSmall => 'लहान';
+
+  @override
+  String get whisperModelSmallDescription => 'चांगली अचूकता, हळू (~२४४ एमबी)';
+
+  @override
+  String get whisperModelMedium => 'मध्यम';
+
+  @override
+  String get whisperModelMediumDescription => 'उच्च अचूकता, हळू (~७६९ एमबी)';
+
+  @override
+  String get whisperModelLargeV1 => 'मोठे व्ही१';
+
+  @override
+  String get whisperModelLargeV1Description =>
+      'सर्वात अचूक, सर्वात हळू (~१.५५ जीबी)';
+
+  @override
+  String get whisperModelLargeV2 => 'मोठे व्ही२';
+
+  @override
+  String get whisperModelLargeV2Description =>
+      'उन्नत मोठे मॉडेल उच्च अचूकतेसह (~१.५५ जीबी)';
+
+  @override
+  String get modelDownloadInfo =>
+      'मॉडेल्स प्रथम वापरणे सुरू असताना डाउनलोड केले जातात. आम्ही बेस, लहान किंवा मध्यम वापरण्याची शिफारस करतो. मोठे मॉडेल्स अत्यंत उच्च-अंत डिव्हाइस आवश्यक.';
+
+  @override
   String get logOut => 'लॉगआउट करा';
 
   @override
@@ -340,6 +393,19 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get cancel => 'रद्द करा';
+
+  @override
+  String get hide => 'Remove';
+
+  @override
+  String get removeRoom => 'Remove Room';
+
+  @override
+  String get removeRoomFromList => 'Remove from list';
+
+  @override
+  String get removeRoomConfirmation =>
+      'Are you sure you want to remove this upcoming room from your list?';
 
   @override
   String get completeYourProfile => 'आपल्या प्रोफाइल पूर्ण करा';
@@ -493,6 +559,9 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get errorLoadPackageInfo => 'पॅकेज माहिती लोड करू शकत नाही';
+
+  @override
+  String get searchFailed => 'Failed to search rooms. Please try again.';
 
   @override
   String get updateAvailable => 'अपडेट उपलब्ध';
@@ -664,6 +733,31 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get noSearchResults => 'कोणतेही शोध परिणाम नाहीत';
+
+  @override
+  String get searchRooms => 'Search rooms...';
+
+  @override
+  String get searchingRooms => 'Searching rooms...';
+
+  @override
+  String get clearSearch => 'Clear search';
+
+  @override
+  String get searchError => 'Search Error';
+
+  @override
+  String get searchRoomsError => 'Failed to search rooms. Please try again.';
+
+  @override
+  String get searchUpcomingRoomsError =>
+      'Failed to search upcoming rooms. Please try again.';
+
+  @override
+  String get search => 'Search';
+
+  @override
+  String get clear => 'Clear';
 
   @override
   String shareRoomMessage(
@@ -899,6 +993,9 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get speakerLabel => 'स्पीकर';
+
+  @override
+  String get audioOptions => 'Audio Options';
 
   @override
   String get end => 'समाप्त करा';
@@ -1168,6 +1265,13 @@ class AppLocalizationsMr extends AppLocalizations {
   String get updateFeaturesImprovement => 'नविन वैशिष्ट्य आणि सुधार मिळवा!';
 
   @override
+  String get failedToRemoveRoom => 'Failed to remove room';
+
+  @override
+  String get roomRemovedSuccessfully =>
+      'Room removed from your list successfully';
+
+  @override
   String get alert => 'सतर्क';
 
   @override
@@ -1242,4 +1346,64 @@ class AppLocalizationsMr extends AppLocalizations {
   @override
   String get noRecordingError =>
       'आपने अध्यायसाठी कोणतेही रेकॉर्डिंग केले नाही. कोठा बंद करण्यापूर्वी कृपया अध्याय रेकॉर्ड करा';
+
+  @override
+  String get audioOutput => 'Audio Output';
+
+  @override
+  String get selectPreferredSpeaker => 'Select your preferred speaker';
+
+  @override
+  String get noAudioOutputDevices => 'No audio output devices detected';
+
+  @override
+  String get refresh => 'Refresh';
+
+  @override
+  String get done => 'Done';
+
+  @override
+  String get deleteMessageTitle => 'संदेश हटवा';
+
+  @override
+  String get deleteMessageContent => 'आपण खरोखर हा संदेश हटवू इच्छिता का?';
+
+  @override
+  String get thisMessageWasDeleted => 'हा संदेश डिलीट केला गेला';
+
+  @override
+  String get failedToDeleteMessage => 'संदेश डिलीट करण्यात अयशस्वी';
+
+  @override
+  String get noFriendsYet => 'No Friends Yet';
+
+  @override
+  String get noFriendsDescription =>
+      'Your friends list is empty. Start connecting with people and grow your network!';
+
+  @override
+  String get findFriends => 'Find Friends';
+
+  @override
+  String get inviteFriend => 'Invite a Friend';
+
+  @override
+  String get noFriendRequestsYet => 'No Friend Requests';
+
+  @override
+  String get noFriendRequestsDescription =>
+      'You don\'t have any pending friend requests. Invite your friends to connect!';
+
+  @override
+  String inviteToResonate(String url) {
+    return 'Hey! Join me on Resonate - a social audio platform where every voice is valued. Download now: $url';
+  }
+
+  @override
+  String get usernameInvalidFormat =>
+      'कृपया वैध युजरनेम प्रविष्ट करा. फक्त अक्षरे, संख्या, बिंदू, अंडरस्कोर आणि हायफनला परवानगी आहे.';
+
+  @override
+  String get usernameAlreadyTaken =>
+      'हे युजरनेम आधीच घेतले गेले आहे. वेगळे युजरनेम वापरून पहा.';
 }

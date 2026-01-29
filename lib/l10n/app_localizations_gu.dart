@@ -394,6 +394,19 @@ class AppLocalizationsGu extends AppLocalizations {
   String get cancel => 'રદ કરો';
 
   @override
+  String get hide => 'Remove';
+
+  @override
+  String get removeRoom => 'Remove Room';
+
+  @override
+  String get removeRoomFromList => 'Remove from list';
+
+  @override
+  String get removeRoomConfirmation =>
+      'Are you sure you want to remove this upcoming room from your list?';
+
+  @override
   String get completeYourProfile => 'તમારી પ્રોફાઈલ પૂર્ણ કરો';
 
   @override
@@ -545,6 +558,9 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get errorLoadPackageInfo => 'પૅકેજ માહિતી લોડ કરી શકાઈ નથી';
+
+  @override
+  String get searchFailed => 'Failed to search rooms. Please try again.';
 
   @override
   String get updateAvailable => 'અપડેટ ઉપલબ્ધ છે';
@@ -715,6 +731,31 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get noSearchResults => 'કોઈ શોધ પરિણામો નથી';
+
+  @override
+  String get searchRooms => 'Search rooms...';
+
+  @override
+  String get searchingRooms => 'Searching rooms...';
+
+  @override
+  String get clearSearch => 'Clear search';
+
+  @override
+  String get searchError => 'Search Error';
+
+  @override
+  String get searchRoomsError => 'Failed to search rooms. Please try again.';
+
+  @override
+  String get searchUpcomingRoomsError =>
+      'Failed to search upcoming rooms. Please try again.';
+
+  @override
+  String get search => 'Search';
+
+  @override
+  String get clear => 'Clear';
 
   @override
   String shareRoomMessage(
@@ -951,6 +992,9 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get speakerLabel => 'સ્પીકર';
+
+  @override
+  String get audioOptions => 'Audio Options';
 
   @override
   String get end => 'સમાપ્ત';
@@ -1220,6 +1264,13 @@ class AppLocalizationsGu extends AppLocalizations {
   String get updateFeaturesImprovement => 'નવા ફીચર્સ અને સુધારાઓ મેળવો!';
 
   @override
+  String get failedToRemoveRoom => 'Failed to remove room';
+
+  @override
+  String get roomRemovedSuccessfully =>
+      'Room removed from your list successfully';
+
+  @override
   String get alert => 'ચેતવણી';
 
   @override
@@ -1294,4 +1345,64 @@ class AppLocalizationsGu extends AppLocalizations {
   @override
   String get noRecordingError =>
       'તમે અધ્યાય માટે કઈ પણ રેકોર્ડિંગ નથી કર્યું. રૂમમાંથી બહાર નીકળતા પહેલાં કૃપા કરીને અધ્યાય રેકોર્ડ કરો.';
+
+  @override
+  String get audioOutput => 'Audio Output';
+
+  @override
+  String get selectPreferredSpeaker => 'Select your preferred speaker';
+
+  @override
+  String get noAudioOutputDevices => 'No audio output devices detected';
+
+  @override
+  String get refresh => 'Refresh';
+
+  @override
+  String get done => 'Done';
+
+  @override
+  String get deleteMessageTitle => 'સંદેશ કાઢી નાખો';
+
+  @override
+  String get deleteMessageContent =>
+      'શું તમે ખરેખર આ સંદેશ કાઢી નાખવા માંગો છો?';
+
+  @override
+  String get thisMessageWasDeleted => 'આ સંદેશ ડિલીટ કરવામાં આવ્યો છે';
+
+  @override
+  String get failedToDeleteMessage => 'સંદેશ ડિલીટ કરવામાં નિષ્ફળ';
+
+  @override
+  String get noFriendsYet => 'No Friends Yet';
+
+  @override
+  String get noFriendsDescription =>
+      'Your friends list is empty. Start connecting with people and grow your network!';
+
+  @override
+  String get findFriends => 'Find Friends';
+
+  @override
+  String get inviteFriend => 'Invite a Friend';
+
+  @override
+  String get noFriendRequestsYet => 'No Friend Requests';
+
+  @override
+  String get noFriendRequestsDescription =>
+      'You don\'t have any pending friend requests. Invite your friends to connect!';
+
+  @override
+  String inviteToResonate(String url) {
+    return 'Hey! Join me on Resonate - a social audio platform where every voice is valued. Download now: $url';
+  }
+
+  @override
+  String get usernameInvalidFormat =>
+      'યુઝરનેમમાં માત્ર અક્ષરો, નંબરો, બિંદુ, અન્ડરસ્કોર અને ડેશ હોવા જોઈએ';
+
+  @override
+  String get usernameAlreadyTaken => 'આ યુઝરનેમ પહેલેથી લેવામાં આવ્યું છે';
 }

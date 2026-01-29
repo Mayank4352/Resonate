@@ -5,11 +5,14 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/intl.dart' as intl;
 
+import 'app_localizations_bn.dart';
 import 'app_localizations_en.dart';
 import 'app_localizations_gu.dart';
 import 'app_localizations_hi.dart';
 import 'app_localizations_kn.dart';
 import 'app_localizations_mr.dart';
+import 'app_localizations_pa.dart';
+import 'app_localizations_ta.dart';
 
 // ignore_for_file: type=lint
 
@@ -97,11 +100,14 @@ abstract class AppLocalizations {
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
+    Locale('bn'),
     Locale('en'),
     Locale('gu'),
     Locale('hi'),
     Locale('kn'),
     Locale('mr'),
+    Locale('pa'),
+    Locale('ta'),
   ];
 
   /// The title of the application.
@@ -842,6 +848,30 @@ abstract class AppLocalizations {
   /// **'Cancel'**
   String get cancel;
 
+  /// Button text to remove an item from view.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove'**
+  String get hide;
+
+  /// Dialog title for removing an upcoming room.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove Room'**
+  String get removeRoom;
+
+  /// Tooltip text for the remove room button.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove from list'**
+  String get removeRoomFromList;
+
+  /// Confirmation message asking if the user wants to remove an upcoming room from their list.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to remove this upcoming room from your list?'**
+  String get removeRoomConfirmation;
+
   /// Page title or prompt for the user to finish setting up their profile.
   ///
   /// In en, this message translates to:
@@ -1135,6 +1165,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Could not load package info'**
   String get errorLoadPackageInfo;
+
+  /// Error message when searching for rooms fails.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to search rooms. Please try again.'**
+  String get searchFailed;
 
   /// Title indicating that a new version of the app is available.
   ///
@@ -1433,7 +1469,7 @@ abstract class AppLocalizations {
   /// Error message when a chosen username is too short.
   ///
   /// In en, this message translates to:
-  /// **'Username should contain more than 5 characters.'**
+  /// **'Username should contain more than 7 characters.'**
   String get usernameCharacterLimit;
 
   /// Generic button text for submitting a form.
@@ -1453,6 +1489,54 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'No Search Results'**
   String get noSearchResults;
+
+  /// Placeholder text for room search input field.
+  ///
+  /// In en, this message translates to:
+  /// **'Search rooms...'**
+  String get searchRooms;
+
+  /// Loading message shown while searching for rooms.
+  ///
+  /// In en, this message translates to:
+  /// **'Searching rooms...'**
+  String get searchingRooms;
+
+  /// Text for button to clear search results.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear search'**
+  String get clearSearch;
+
+  /// Title for search error messages.
+  ///
+  /// In en, this message translates to:
+  /// **'Search Error'**
+  String get searchError;
+
+  /// Error message when room search fails.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to search rooms. Please try again.'**
+  String get searchRoomsError;
+
+  /// Error message when upcoming room search fails.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to search upcoming rooms. Please try again.'**
+  String get searchUpcomingRoomsError;
+
+  /// Tooltip text for search button.
+  ///
+  /// In en, this message translates to:
+  /// **'Search'**
+  String get search;
+
+  /// Tooltip text for clear button.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear'**
+  String get clear;
 
   /// The default message template used when sharing a room.
   ///
@@ -1853,6 +1937,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Speaker'**
   String get speakerLabel;
+
+  /// Label for the audio options/settings button.
+  ///
+  /// In en, this message translates to:
+  /// **'Audio Options'**
+  String get audioOptions;
 
   /// Button text to end a call or session.
   ///
@@ -2256,6 +2346,18 @@ abstract class AppLocalizations {
   /// **'Get the latest features and improvements!'**
   String get updateFeaturesImprovement;
 
+  /// Error message when unable to remove a room from the list
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to remove room'**
+  String get failedToRemoveRoom;
+
+  /// Success message when a room is successfully removed from the user's list
+  ///
+  /// In en, this message translates to:
+  /// **'Room removed from your list successfully'**
+  String get roomRemovedSuccessfully;
+
   /// Title for an alert dialog.
   ///
   /// In en, this message translates to:
@@ -2375,6 +2477,114 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'You have not recorded anything for the chapter. Please record a chapter before exiting the room'**
   String get noRecordingError;
+
+  /// Title for audio output device selector.
+  ///
+  /// In en, this message translates to:
+  /// **'Audio Output'**
+  String get audioOutput;
+
+  /// Subtitle for audio device selector dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'Select your preferred speaker'**
+  String get selectPreferredSpeaker;
+
+  /// Message shown when no audio output devices are available.
+  ///
+  /// In en, this message translates to:
+  /// **'No audio output devices detected'**
+  String get noAudioOutputDevices;
+
+  /// Button text to refresh audio device list.
+  ///
+  /// In en, this message translates to:
+  /// **'Refresh'**
+  String get refresh;
+
+  /// Button text to close audio device selector.
+  ///
+  /// In en, this message translates to:
+  /// **'Done'**
+  String get done;
+
+  /// Title shown in the delete message confirmation dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete Message'**
+  String get deleteMessageTitle;
+
+  /// Confirmation text asking the user if they want to delete a message.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to delete this message?'**
+  String get deleteMessageContent;
+
+  /// Status text shown when a previously sent message has been deleted.
+  ///
+  /// In en, this message translates to:
+  /// **'This message was deleted'**
+  String get thisMessageWasDeleted;
+
+  /// Error message shown when the system is unable to delete a message.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to delete message'**
+  String get failedToDeleteMessage;
+
+  /// Title shown when user has no friends.
+  ///
+  /// In en, this message translates to:
+  /// **'No Friends Yet'**
+  String get noFriendsYet;
+
+  /// Description shown when user has no friends.
+  ///
+  /// In en, this message translates to:
+  /// **'Your friends list is empty. Start connecting with people and grow your network!'**
+  String get noFriendsDescription;
+
+  /// Button text to navigate to find friends screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Find Friends'**
+  String get findFriends;
+
+  /// Button text to invite friends to the app.
+  ///
+  /// In en, this message translates to:
+  /// **'Invite a Friend'**
+  String get inviteFriend;
+
+  /// Title shown when user has no friend requests.
+  ///
+  /// In en, this message translates to:
+  /// **'No Friend Requests'**
+  String get noFriendRequestsYet;
+
+  /// Description shown when user has no friend requests.
+  ///
+  /// In en, this message translates to:
+  /// **'You don\'t have any pending friend requests. Invite your friends to connect!'**
+  String get noFriendRequestsDescription;
+
+  /// Text used when inviting friends to the app.
+  ///
+  /// In en, this message translates to:
+  /// **'Hey! Join me on Resonate - a social audio platform where every voice is valued. Download now: {url}'**
+  String inviteToResonate(String url);
+
+  /// Validation error displayed when the user enters a username with unsupported characters.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a valid username. Only letters, numbers, dots, underscores, and hyphens are allowed.'**
+  String get usernameInvalidFormat;
+
+  /// Error shown when the chosen username is unavailable because another user has already registered it.
+  ///
+  /// In en, this message translates to:
+  /// **'This username is already taken. Try a different one.'**
+  String get usernameAlreadyTaken;
 }
 
 class _AppLocalizationsDelegate
@@ -2387,8 +2597,16 @@ class _AppLocalizationsDelegate
   }
 
   @override
-  bool isSupported(Locale locale) =>
-      <String>['en', 'gu', 'hi', 'kn', 'mr'].contains(locale.languageCode);
+  bool isSupported(Locale locale) => <String>[
+    'bn',
+    'en',
+    'gu',
+    'hi',
+    'kn',
+    'mr',
+    'pa',
+    'ta',
+  ].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
@@ -2397,8 +2615,8 @@ class _AppLocalizationsDelegate
 AppLocalizations lookupAppLocalizations(Locale locale) {
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
-    case 'mr':
-      return AppLocalizationsMr();
+    case 'bn':
+      return AppLocalizationsBn();
     case 'en':
       return AppLocalizationsEn();
     case 'gu':
@@ -2407,6 +2625,12 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsHi();
     case 'kn':
       return AppLocalizationsKn();
+    case 'mr':
+      return AppLocalizationsMr();
+    case 'pa':
+      return AppLocalizationsPa();
+    case 'ta':
+      return AppLocalizationsTa();
   }
 
   throw FlutterError(
